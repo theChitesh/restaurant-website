@@ -18,6 +18,9 @@ import { ContactComponent } from './contact/contact.component';
 
 import { DishService } from './services/dish.service';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { PromotionService } from './services/promotion.service';
+import { LeaderService } from './services/leader.service';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -29,14 +32,18 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     FooterComponent,
     HomeComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,BrowserAnimationsModule,FormsModule,
     HttpModule,FlexLayoutModule,MaterialModule,
     AppRoutingModule
   ],
-  providers: [DishService],
+  providers: [DishService,PromotionService,LeaderService],
+  //entry component are used for the component which are not directly used,
+  //in application but is triggered by other part of the application
+  entryComponents:[LoginComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
