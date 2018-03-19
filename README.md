@@ -33,3 +33,4 @@ After creating application, following are the dependencies which are installed.
 1) npm install @angular/material @angular/cdk --save (Used for design)
 2) npm i hammerjs --save  (Hammerjs supports gesture modes)
 3) npm i @angular/flex-layout@latest --save  (for layout)
+4) npm i font-awesome --save (after install, make font-awesome available for angular by adding its path in .agnular-cli.json file inside styles tag)
