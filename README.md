@@ -34,3 +34,9 @@ After creating application, following are the dependencies which are installed.
 2) npm i hammerjs --save  (Hammerjs supports gesture modes)
 3) npm i @angular/flex-layout@latest --save  (for layout)
 4) npm i font-awesome --save (after install, make font-awesome available for angular by adding its path in .agnular-cli.json file inside styles tag)
+
+## Problem
+There is a issue with metadata flex-layout version mismatch, which will occur on server start, but after server start open the any *.ts file in an IDE(e.g. Visual Studio Code) and save any *.ts file, this will kick start the application. 
+This problem only comes at the first start of the server.
+-- `Working on fixing the problem.`
+
